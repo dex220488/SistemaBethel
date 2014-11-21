@@ -168,8 +168,10 @@
       <DependentUpon>ModelSistemaBethel.edmx</DependentUpon>
       <LastGenOutput>ModelSistemaBethel.vb</LastGenOutput>
     </Content>
+    <Content Include="Instaladores\Instaladores SistemaBethel.rar" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Global.asax" />
+    <Content Include="Instaladores\sisbeth BD.sql" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />

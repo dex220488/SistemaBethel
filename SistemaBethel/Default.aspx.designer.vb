@@ -14,24 +14,6 @@ Option Explicit On
 Partial Public Class _Default
 
     '''<summary>
-    '''Control LoginView1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LoginView1 As Global.System.Web.UI.WebControls.LoginView
-
-    '''<summary>
-    '''Control ModelErrorMessage1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ModelErrorMessage1 As Global.System.Web.UI.WebControls.ModelErrorMessage
-
-    '''<summary>
     '''Control providerDetails.
     '''</summary>
     '''<remarks>

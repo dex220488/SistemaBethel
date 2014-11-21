@@ -12,7 +12,7 @@
                  </button>
              </ItemTemplate>
              <EmptyDataTemplate>
-                 <p>No se encuentra configurado ningún servidor de cuentas externo. </p>
+                 <p>No se encuentra configurado ningún servidor de cuentas externo.</p>
              </EmptyDataTemplate>
          </asp:ListView>
 </asp:Content>

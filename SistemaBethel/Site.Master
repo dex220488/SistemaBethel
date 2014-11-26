@@ -6,19 +6,17 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <script src='<%=ResolveUrl("Scripts/jquery-2.1.1.min.js") %>'></script>
+    <script src='<%=ResolveUrl("Scripts/bootstrap.min.js")%>'></script>
+    <script src='<%=ResolveUrl("Scripts/moment.js")%>'></script>
+    <script src='<%=ResolveUrl("Scripts/bootstrap-datetimepicker.js")%>'></script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <%--Agregar Bootstrap--%>
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Content/Custom.css" rel="stylesheet" />
-    <link href="Content/bootstrap-timepicker.min.css"  rel="stylesheet"/>
-    <script src="Scripts/jquery-2.1.1.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-        <script  src="Scripts/bootstrap-timepicker.min.js"></script>
-    <%--Fin Agregar Bootstrap--%>
-
-   
 </head>
 <body>
     <form id="form1" role="form" runat="server">

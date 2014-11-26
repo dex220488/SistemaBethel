@@ -1,5 +1,18 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Reportes.aspx.vb" Inherits="SistemaBethel.Reportes1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(function () {
+            $('#div_date_rpt').datetimepicker(
+                {
+                    pickTime: false
+                }
+              );
+            $('#div_hour_rpt').datetimepicker({
+                pickDate: false
+            });
+        });
+     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2><%: Title%>.</h2>
@@ -23,21 +36,11 @@
                                             <tr>
                                                 <td style="width: 10%">Fecha:</td>
                                                 <td style="width: 20%">
-                                                    <asp:TextBox ID="txtFecha" CssClass="form-control" runat="server" TextMode="Date"></asp:TextBox>
-
-                                                    <div class='input-group date' id='datetimepicker5'>
-                                                        <input type='text' class="form-control" data-date-format="YYYY/MM/DD" />
-                                                        <span class="input-group-addon">
-                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                    <div class="input-group date" id="div_date_rpt">
+                                                        <input runat="server" id="txtFechaRpt" type="text" class="form-control" />
+                                                        <span class="input-group-addon"><span class="glyphicon-calendar glyphicon"></span>
                                                         </span>
                                                     </div>
-                                                    <script type="text/javascript">
-                                                        $(function () {
-                                                            $('#datetimepicker5').datetimepicker({
-                                                                pickTime: false
-                                                            });
-                                                        });
-                                                    </script>
                                                 </td>
                                                 <td style="width: 10%">Anfitrión:</td>
                                                 <td>
@@ -132,7 +135,11 @@
                                                 </td>
                                                 <td>A las:</td>
                                                 <td>
-                                                    <asp:TextBox ID="tb_hora" CssClass="form-control" type="time" runat="server"></asp:TextBox>
+                                                    <div class='input-group date' id='div_hour_rpt'>
+                                                        <input runat="server" id="txtHoraCelula" type='text' class="form-control" />
+                                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                                                        </span>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>

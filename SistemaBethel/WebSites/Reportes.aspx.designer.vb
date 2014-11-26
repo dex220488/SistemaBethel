@@ -50,13 +50,13 @@ Partial Public Class Reportes1
     Protected WithEvents vw_rpt As Global.System.Web.UI.WebControls.View
 
     '''<summary>
-    '''Control txtFecha.
+    '''Control txtFechaRpt.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtFecha As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtFechaRpt As Global.System.Web.UI.HtmlControls.HtmlInputText
 
     '''<summary>
     '''Control cb_anfitrion_rpt.
@@ -185,13 +185,13 @@ Partial Public Class Reportes1
     Protected WithEvents cb_dia As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control tb_hora.
+    '''Control txtHoraCelula.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents tb_hora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtHoraCelula As Global.System.Web.UI.HtmlControls.HtmlInputText
 
     '''<summary>
     '''Control btn_insert.

@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Reportes
+Partial Public Class Reportes1
 
     '''<summary>
     '''Control btn_cel.

@@ -1,5 +1,4 @@
-﻿<%@ Page Title="Reportes" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Reportes.aspx.vb" Inherits="SistemaBethel.Reportes" %>
-
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Reportes.aspx.vb" Inherits="SistemaBethel.Reportes1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -24,7 +23,22 @@
                                             <tr>
                                                 <td style="width: 10%">Fecha:</td>
                                                 <td style="width: 20%">
-                                                    <asp:TextBox ID="txtFecha" CssClass="form-control" runat="server" TextMode="Date"></asp:TextBox></td>
+                                                    <asp:TextBox ID="txtFecha" CssClass="form-control" runat="server" TextMode="Date"></asp:TextBox>
+
+                                                    <div class='input-group date' id='datetimepicker5'>
+                                                        <input type='text' class="form-control" data-date-format="YYYY/MM/DD" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        $(function () {
+                                                            $('#datetimepicker5').datetimepicker({
+                                                                pickTime: false
+                                                            });
+                                                        });
+                                                    </script>
+                                                </td>
                                                 <td style="width: 10%">Anfitrión:</td>
                                                 <td>
                                                     <asp:DropDownList ID="cb_anfitrion_rpt" CssClass="form-control" runat="server" Width="100%" DataTextField="NombreCompleto" DataValueField="Id">

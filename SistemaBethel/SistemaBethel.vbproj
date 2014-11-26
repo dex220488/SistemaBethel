@@ -151,6 +151,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="WebSites\Reportes.aspx" />
     <EntityDeploy Include="EntityFramework\ModelSistemaBethel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelSistemaBethel.Designer.vb</LastGenOutput>
@@ -183,7 +184,6 @@
     <Content Include="WebSites\About.aspx" />
     <Content Include="WebSites\Contact.aspx" />
     <Content Include="WebSites\Membresia.aspx" />
-    <Content Include="WebSites\Reportes.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.vb" />
@@ -217,7 +217,6 @@
     </Compile>
     <Compile Include="EntityFramework\reportes.vb">
       <DependentUpon>ModelSistemaBethel.tt</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EntityFramework\v_miembros.vb">
       <DependentUpon>ModelSistemaBethel.tt</DependentUpon>
